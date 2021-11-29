@@ -1,5 +1,5 @@
-import fetch from "node-fetch";
-import fs from "fs";
+const fs = require("fs");
+const fetch = require("node-fetch");
 
 async function submitGrading(url, data) {
   const response = await fetch(url, {
